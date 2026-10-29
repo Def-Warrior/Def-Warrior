@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 140" width="100%" height="140">
+  <defs>
+    <linearGradient id="hud-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070c14" />
+      <stop offset="100%" stop-color="#020408" />
+    </linearGradient>
+
+    <linearGradient id="meter-green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00e5ff" />
+      <stop offset="100%" stop-color="#00ff66" />
+    </linearGradient>
+
+    <linearGradient id="meter-red" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ff9900" />
+      <stop offset="100%" stop-color="#ff0055" />
+    </linearGradient>
+
+    <filter id="hud-glow">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <style>
+      @keyframes barPulse1 { 0%, 100% { width: 88%; } 50% { width: 96%; } }
+      @keyframes barPulse2 { 0%, 100% { width: 94%; } 50% { width: 82%; } }
+      @keyframes barPulse3 { 0%, 100% { width: 91%; } 50% { width: 98%; } }
+      @keyframes barPulse4 { 0%, 100% { width: 85%; } 50% { width: 75%; } }
+      @keyframes blinker { 0%, 100% { opacity: 1; } 50% { opacity: 0.1; } }
+
+      .bar1 { animation: barPulse1 3s ease-in-out infinite; }
+      .bar2 { animation: barPulse2 2.6s ease-in-out infinite; }
+      .bar3 { animation: barPulse3 3.4s ease-in-out infinite; }
+      .bar4 { animation: barPulse4 2.2s ease-in-out infinite; }
+      .blink { animation: blinker 1.2s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <rect width="880" height="140" rx="10" fill="url(#hud-bg)" stroke="#00ff66" stroke-width="1" stroke-opacity="0.3" />
+
+  <!-- Corner Brackets -->
+  <path d="M 10 25 L 10 10 L 25 10" fill="none" stroke="#00e5ff" stroke-width="2" />
+  <path d="M 870 25 L 870 10 L 855 10" fill="none" stroke="#00e5ff" stroke-width="2" />
+  <path d="M 10 115 L 10 130 L 25 130" fill="none" stroke="#00e5ff" stroke-width="2" />
+  <path d="M 870 115 L 870 130 L 855 130" fill="none" stroke="#00e5ff" stroke-width="2" />
+
+  <!-- Telemetry Row 1 -->
+  <!-- Module 1: Recon & Intel -->
+  <g transform="translate(35, 25)">
+    <text font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#00ff66">
+      [01] RECON &amp; TARGET MAPPING
+    </text>
+    <rect x="0" y="8" width="180" height="8" rx="2" fill="#15202b" />
+    <rect x="0" y="8" width="168" height="8" rx="2" fill="url(#meter-green)" class="bar1" filter="url(#hud-glow)" />
+    <text x="188" y="16" font-family="'Courier New', monospace" font-size="10" fill="#00e5ff">94% OPTIMAL</text>
+  </g>
+
+  <!-- Module 2: Exploit Synthesis -->
+  <g transform="translate(460, 25)">
+    <text font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#00ff66">
+      [02] EXPLOIT SYNTHESIS &amp; VAPT
+    </text>
+    <rect x="0" y="8" width="180" height="8" rx="2" fill="#15202b" />
+    <rect x="0" y="8" width="174" height="8" rx="2" fill="url(#meter-green)" class="bar2" filter="url(#hud-glow)" />
+    <text x="188" y="16" font-family="'Courier New', monospace" font-size="10" fill="#00ff66">97% ARMED</text>
+  </g>
+
+  <!-- Telemetry Row 2 -->
+  <!-- Module 3: Stealth & Evasion -->
+  <g transform="translate(35, 75)">
+    <text font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#00e5ff">
+      [03] CLOAKING // SHADOW EVASION
+    </text>
+    <rect x="0" y="8" width="180" height="8" rx="2" fill="#15202b" />
+    <rect x="0" y="8" width="162" height="8" rx="2" fill="url(#meter-green)" class="bar3" filter="url(#hud-glow)" />
+    <text x="188" y="16" font-family="'Courier New', monospace" font-size="10" fill="#00e5ff">91% SILENT</text>
+  </g>
+
+  <!-- Module 4: Zero-Day Response -->
+  <g transform="translate(460, 75)">
+    <text font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#ff0055">
+      [04] ADVERSARIAL THREAT LEVEL
+    </text>
+    <rect x="0" y="8" width="180" height="8" rx="2" fill="#15202b" />
+    <rect x="0" y="8" width="170" height="8" rx="2" fill="url(#meter-red)" class="bar4" filter="url(#hud-glow)" />
+    <text x="188" y="16" font-family="'Courier New', monospace" font-size="10" fill="#ff0055">DEFCON 1</text>
+  </g>
+
+  <!-- Bottom Telemetry Status Line -->
+  <g transform="translate(35, 122)" font-family="'Courier New', monospace" font-size="10">
+    <circle cx="0" cy="-3" r="3" fill="#00ff66" class="blink" />
+    <text x="10" y="0" fill="#718096">STATUS: <tspan fill="#00ff66">KALI-SHADOW-KERNEL // ACTIVE DAEMON</tspan> | NODE: <tspan fill="#00e5ff">DEF-WARRIOR-ALPHA</tspan> | PROTOCOL: <tspan fill="#ffffff">SYN-ACK-KILL</tspan></text>
+  </g>
+</svg>

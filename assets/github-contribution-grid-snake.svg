@@ -1,0 +1,289 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 160" width="100%" height="160">
+  <defs>
+    <style>
+      @keyframes snakeMove {
+        0% { transform: translate(0, 0); }
+        25% { transform: translate(160px, 0); }
+        50% { transform: translate(160px, 45px); }
+        75% { transform: translate(320px, 45px); }
+        100% { transform: translate(0, 0); }
+      }
+      @keyframes dotPulse {
+        0%, 100% { opacity: 0.3; }
+        50% { opacity: 1; filter: drop-shadow(0 0 4px #00ff66); }
+      }
+      .snake-head {
+        fill: #00ff66;
+        filter: drop-shadow(0 0 6px #00ff66);
+      }
+      .snake-body {
+        fill: #00e5ff;
+        filter: drop-shadow(0 0 4px #00e5ff);
+      }
+      .snake-crawler {
+        animation: snakeMove 8s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+      }
+      .grid-dot {
+        rx: 3px;
+        transition: all 0.3s;
+      }
+      .active-1 { fill: #004d20; }
+      .active-2 { fill: #008f39; }
+      .active-3 { fill: #00cc4c; }
+      .active-4 { fill: #00ff66; animation: dotPulse 3s infinite; }
+    </style>
+  </defs>
+
+  <!-- Background Container -->
+  <rect width="880" height="160" rx="10" fill="#090d16" stroke="#00ff66" stroke-width="1" stroke-opacity="0.3" />
+
+  <!-- Title Header -->
+  <g transform="translate(30, 28)">
+    <text font-family="'Courier New', monospace" font-size="12" font-weight="bold" fill="#00ff66">
+      🐍 CYBER SHINOBI // CONTRIBUTION MATRIX SNURIKEN
+    </text>
+    <text x="560" y="0" font-family="'Courier New', monospace" font-size="10" fill="#718096">
+      [FEEDING ON VULNERABILITIES &amp; COMMITS]
+    </text>
+  </g>
+
+  <!-- Contribution Dots Grid Sample (53 weeks style) -->
+  <g transform="translate(30, 48)">
+    <!-- Row 0 -->
+    <rect x="0" y="0" width="12" height="12" class="grid-dot" fill="#161f2e" />
+    <rect x="16" y="0" width="12" height="12" class="grid-dot active-1" />
+    <rect x="32" y="0" width="12" height="12" class="grid-dot active-2" />
+    <rect x="48" y="0" width="12" height="12" class="grid-dot active-4" />
+    <rect x="64" y="0" width="12" height="12" class="grid-dot active-1" />
+    <rect x="80" y="0" width="12" height="12" class="grid-dot active-3" />
+    <rect x="96" y="0" width="12" height="12" class="grid-dot active-2" />
+    <rect x="112" y="0" width="12" height="12" class="grid-dot active-4" />
+    <rect x="128" y="0" width="12" height="12" class="grid-dot active-2" />
+    <rect x="144" y="0" width="12" height="12" class="grid-dot active-3" />
+    <rect x="160" y="0" width="12" height="12" class="grid-dot active-4" />
+    <rect x="176" y="0" width="12" height="12" class="grid-dot active-1" />
+    <rect x="192" y="0" width="12" height="12" class="grid-dot active-2" />
+    <rect x="208" y="0" width="12" height="12" class="grid-dot active-3" />
+    <rect x="224" y="0" width="12" height="12" class="grid-dot active-4" />
+    <rect x="240" y="0" width="12" height="12" class="grid-dot active-2" />
+    <rect x="256" y="0" width="12" height="12" class="grid-dot active-3" />
+    <rect x="272" y="0" width="12" height="12" class="grid-dot active-1" />
+    <rect x="288" y="0" width="12" height="12" class="grid-dot active-2" />
+    <rect x="304" y="0" width="12" height="12" class="grid-dot active-4" />
+    <rect x="320" y="0" width="12" height="12" class="grid-dot active-3" />
+    <rect x="336" y="0" width="12" height="12" class="grid-dot active-2" />
+    <rect x="352" y="0" width="12" height="12" class="grid-dot active-4" />
+    <rect x="368" y="0" width="12" height="12" class="grid-dot active-1" />
+    <rect x="384" y="0" width="12" height="12" class="grid-dot active-2" />
+    <rect x="400" y="0" width="12" height="12" class="grid-dot active-3" />
+    <rect x="416" y="0" width="12" height="12" class="grid-dot active-4" />
+    <rect x="432" y="0" width="12" height="12" class="grid-dot active-1" />
+    <rect x="448" y="0" width="12" height="12" class="grid-dot active-3" />
+    <rect x="464" y="0" width="12" height="12" class="grid-dot active-2" />
+    <rect x="480" y="0" width="12" height="12" class="grid-dot active-4" />
+    <rect x="496" y="0" width="12" height="12" class="grid-dot active-1" />
+    <rect x="512" y="0" width="12" height="12" class="grid-dot active-2" />
+    <rect x="528" y="0" width="12" height="12" class="grid-dot active-3" />
+    <rect x="544" y="0" width="12" height="12" class="grid-dot active-4" />
+    <rect x="560" y="0" width="12" height="12" class="grid-dot active-2" />
+    <rect x="576" y="0" width="12" height="12" class="grid-dot active-1" />
+    <rect x="592" y="0" width="12" height="12" class="grid-dot active-3" />
+    <rect x="608" y="0" width="12" height="12" class="grid-dot active-2" />
+    <rect x="624" y="0" width="12" height="12" class="grid-dot active-4" />
+    <rect x="640" y="0" width="12" height="12" class="grid-dot active-2" />
+    <rect x="656" y="0" width="12" height="12" class="grid-dot active-3" />
+    <rect x="672" y="0" width="12" height="12" class="grid-dot active-1" />
+    <rect x="688" y="0" width="12" height="12" class="grid-dot active-4" />
+    <rect x="704" y="0" width="12" height="12" class="grid-dot active-2" />
+    <rect x="720" y="0" width="12" height="12" class="grid-dot active-3" />
+    <rect x="736" y="0" width="12" height="12" class="grid-dot active-1" />
+    <rect x="752" y="0" width="12" height="12" class="grid-dot active-4" />
+    <rect x="768" y="0" width="12" height="12" class="grid-dot active-3" />
+    <rect x="784" y="0" width="12" height="12" class="grid-dot active-2" />
+    <rect x="800" y="0" width="12" height="12" class="grid-dot active-4" />
+
+    <!-- Row 1 -->
+    <g transform="translate(0, 16)">
+      <rect x="0" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="16" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="32" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="48" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="64" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="80" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="96" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="112" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="128" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="144" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="160" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="176" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="192" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="208" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="224" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="240" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="256" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="272" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="288" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="304" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="320" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="336" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="352" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="368" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="384" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="400" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="416" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="432" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="448" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="464" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="480" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="496" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="512" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="528" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="544" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="560" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="576" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="592" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="608" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="624" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="640" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="656" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="672" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="688" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="704" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="720" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="736" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="752" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="768" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="784" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="800" y="0" width="12" height="12" class="grid-dot active-3" />
+    </g>
+
+    <!-- Row 2 -->
+    <g transform="translate(0, 32)">
+      <rect x="0" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="16" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="32" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="48" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="64" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="80" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="96" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="112" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="128" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="144" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="160" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="176" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="192" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="208" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="224" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="240" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="256" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="272" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="288" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="304" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="320" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="336" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="352" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="368" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="384" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="400" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="416" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="432" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="448" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="464" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="480" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="496" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="512" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="528" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="544" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="560" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="576" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="592" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="608" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="624" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="640" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="656" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="672" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="688" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="704" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="720" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="736" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="752" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="768" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="784" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="800" y="0" width="12" height="12" class="grid-dot active-4" />
+    </g>
+
+    <!-- Row 3 -->
+    <g transform="translate(0, 48)">
+      <rect x="0" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="16" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="32" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="48" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="64" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="80" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="96" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="112" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="128" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="144" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="160" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="176" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="192" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="208" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="224" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="240" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="256" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="272" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="288" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="304" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="320" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="336" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="352" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="368" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="384" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="400" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="416" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="432" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="448" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="464" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="480" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="496" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="512" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="528" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="544" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="560" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="576" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="592" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="608" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="624" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="640" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="656" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="672" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="688" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="704" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="720" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="736" y="0" width="12" height="12" class="grid-dot active-1" />
+      <rect x="752" y="0" width="12" height="12" class="grid-dot active-3" />
+      <rect x="768" y="0" width="12" height="12" class="grid-dot active-2" />
+      <rect x="784" y="0" width="12" height="12" class="grid-dot active-4" />
+      <rect x="800" y="0" width="12" height="12" class="grid-dot active-3" />
+    </g>
+
+    <!-- Animated Cyber Snake Crawler -->
+    <g class="snake-crawler">
+      <rect x="48" y="0" width="12" height="12" rx="3" class="snake-head" />
+      <rect x="32" y="0" width="12" height="12" rx="3" class="snake-body" />
+      <rect x="16" y="0" width="12" height="12" rx="3" class="snake-body" opacity="0.8" />
+      <rect x="0" y="0" width="12" height="12" rx="3" class="snake-body" opacity="0.5" />
+    </g>
+  </g>
+
+  <!-- Legend in bottom right -->
+  <g transform="translate(620, 138)" font-family="'Courier New', monospace" font-size="9" fill="#718096">
+    <text x="0" y="9">Less</text>
+    <rect x="32" y="0" width="9" height="9" rx="2" fill="#161f2e" />
+    <rect x="45" y="0" width="9" height="9" rx="2" fill="#004d20" />
+    <rect x="58" y="0" width="9" height="9" rx="2" fill="#008f39" />
+    <rect x="71" y="0" width="9" height="9" rx="2" fill="#00cc4c" />
+    <rect x="84" y="0" width="9" height="9" rx="2" fill="#00ff66" />
+    <text x="100" y="9">More</text>
+  </g>
+</svg>

@@ -1,0 +1,31 @@
+name: Generate Cyber Snake
+
+on:
+  schedule:
+    # Run every 12 hours
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: Platane/snk@v3
+        id: snake-svg
+        with:
+          github_user_name: Def-Warrior
+          outputs: |
+            assets/github-contribution-grid-snake.svg?palette=github-dark&color_snake=#00ff66&color_dots=#090d16,#004d20,#008f39,#00cc4c,#00ff66
+
+      - name: Commit & Push Snake SVG
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: "Shadow-Ops Bot"
+          author_email: "actions@github.com"
+          message: "⚔️ [AUTOMATED] Cyber Shinobi Snake Grid refreshed"
+          add: "assets/github-contribution-grid-snake.svg"
